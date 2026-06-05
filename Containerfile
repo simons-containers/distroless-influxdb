@@ -1,7 +1,7 @@
 FROM archlinux:base-devel-20260308.0.497099 AS builder
 
 ARG INFLUXDB_VERSION
-ARG INFLUXDB_RELEASE=https://dl.influxdata.com/influxdb/releases/v${INFLUXDB_VERSION}/influxdb2-${INFLUXDB_VERSION}_linux_amd64.tar.gz
+ARG INFLUXDB_RELEASE=https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_amd64.tar.gz
 
 WORKDIR /extract/influxdb
 RUN curl --silent --show-error --location --output influxdb.tar.gz \
