@@ -1,3 +1,7 @@
+![Latest](https://ghcr-badge.egpl.dev/simons-containers/distroless-influxdb/latest_tag?ignore=latest,sha256*&label=latest)  
+![Size](https://ghcr-badge.egpl.dev/simons-containers/distroless-influxdb/size?tag=latest)  
+![Tags](https://ghcr-badge.egpl.dev/simons-containers/distroless-influxdb/tags?ignore=latest,sha256*)  
+
 # Distroless InfluxDB container
 
 Bare-bones distroless InfluxDB container image.
