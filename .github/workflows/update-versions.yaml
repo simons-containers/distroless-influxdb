@@ -32,7 +32,7 @@ jobs:
             jq \
               --arg influxdb "$INFLUXDB" \
               '
-                .garage.version = $garage
+                .influxdb.version = $influxdb
               ' sources.json > tmp.json && mv tmp.json sources.json
 
             git diff sources.json
