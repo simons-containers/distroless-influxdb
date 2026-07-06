@@ -24,7 +24,7 @@ jobs:
           command: |
             set -uo pipefail
             INFLUXDB=$(git ls-remote --tags https://github.com/influxdata/influxdb.git/ \
-              | awk -F/ '/v[0-9\.]+$/ {gsub("v", ""); print $3}' \
+              | awk -F/ '/v2[0-9\.]+$/ {gsub("v", ""); print $3}' \
               | sort -V | tail -1)
   
             : ${INFLUXDB:?}
